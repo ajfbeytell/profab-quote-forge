@@ -50,15 +50,4 @@ with col1:
     st.page_link("pages/underslung_crane_app.py", label="Design Underslung Crane", icon="🔧", use_container_width=True)
     st.page_link("pages/overhead_crane_app.py", label="Design Overhead Crane", icon="🔧", use_container_width=True)
 
-with col2:
-    st.markdown("### 🏠 Structural Buildings")
-    st.write("Portal frames, industrial sheds, warehouses")
-    st.page_link("pages/structural_building_app.py", label="Coming Soon", icon="🏗️", use_container_width=True, disabled=True)
-
-with col3:
-    st.markdown("### 🛢️ Tanks & Silos")
-    st.write("Storage tanks, pressure vessels, silos")
-    st.page_link("pages/tank_silo_app.py", label="Coming Soon", icon="🛢️", use_container_width=True, disabled=True)
-
-st.markdown("---")
-st.caption("© QuoteForge • Preliminary designs only • Final designs must be checked & signed by a registered ECSA Engineer")
+st.caption("© QuoteForge • Preliminary designs only • Must be checked by registered ECSA Engineer")
