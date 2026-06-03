@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFAB Engineering | Fast Preliminary Designs & Quotes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- HERO SECTION -->
+  <section class="bg-blue-900 text-white py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-4">Fast Preliminary Designs &amp; Quotes</h1>
+      <p class="text-2xl mb-6">for Cranes, Lifting Equipment &amp; Structural Steel</p>
+      <p class="max-w-2xl mx-auto text-lg mb-8">
+        Professional prelim designs, calculations, BOM and mass estimate in just a few hours.<br>
+        Quote jobs confidently — no expensive upfront engineering fees.
+      </p>
+      <a href="#contact" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg inline-block">
+        Get Your Fast Quote Now →
+      </a>
+    </div>
+  </section>
+
+  <!-- FAST PRELIM QUOTES SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold">Fast Preliminary Designs &amp; Quotes</h2>
+      <p class="text-lg text-gray-600 mt-2">Send your requirements → Receive a professional prelim design + BOM same day</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h3 class="text-2xl font-semibold mb-4">Lifting Equipment</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Spreader beams &amp; lifting beams</li>
+          <li>• Jib cranes (freestanding &amp; wall mounted)</li>
+          <li>• Monorail &amp; underslung cranes</li>
+          <li>• Portal frame cranes</li>
+          <li>• Overhead cranes</li>
+        </ul>
+        <p class="mt-6 font-semibold text-blue-700">From R650 • Same-day delivery</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h3 class="text-2xl font-semibold mb-4">Structural &amp; Plant</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Structural steel detailing</li>
+          <li>• Pipework &amp; plant layouts</li>
+          <li>• Reverse engineering &amp; 3D scanning</li>
+          <li>• Custom machine design</li>
+        </ul>
+        <p class="mt-6 font-semibold text-blue-700">From R950 • Ready for quoting</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow border-2 border-blue-600">
+        <h3 class="text-2xl font-semibold mb-4">Why clients love it</h3>
+        <p class="text-gray-700">"Saved us R15 000 in engineering fees on one tender alone. The prelim BOM was exactly what we needed."</p>
+        <p class="mt-4 text-sm text-gray-500">— Gauteng steel fabricator</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="bg-gray-900 text-white py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">40+ Years of Trusted Engineering Excellence</h2>
+      <p class="text-lg">
+        Founded in 1984, PROFAB Engineering Design Consultancy has delivered high-quality engineering solutions across South Africa. 
+        We have worked on critical projects for Impala Platinum, Anglo American, Sappi, and many others.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT / QUOTE FORM -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold">Ready for a Fast Prelim Quote?</h2>
+      <p class="text-lg text-gray-600 mt-2">Send your requirements and we’ll reply with a professional prelim design + BOM within hours.</p>
+    </div>
+
+    <!-- NETLIFY FORM -->
+    <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white p-8 rounded-2xl shadow">
+      
+      <!-- Honeypot (spam protection) -->
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="grid grid-cols-1 gap-6">
+        <input type="text" name="name" placeholder="Your Name" required 
+               class="w-full border border-gray-300 p-4 rounded-xl">
+
+        <input type="email" name="email" placeholder="Your Email" required 
+               class="w-full border border-gray-300 p-4 rounded-xl">
+
+        <textarea name="requirements" rows="6" placeholder="Tell us about your project (SWL, span, height, type of crane/lifting equipment, etc.)" required 
+                  class="w-full border border-gray-300 p-4 rounded-xl"></textarea>
+      </div>
+
+      <button type="submit" 
+              class="mt-6 w-full bg-blue-700 hover:bg-blue-800 text-white text-xl font-semibold py-4 rounded-2xl transition">
+        Send Requirements → Get Quote
+      </button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-8 text-sm">
+    © 2026 PROFAB Engineering Design Consultancy • Preliminary designs for quoting only
+  </footer>
+
+</body>
+</html>
