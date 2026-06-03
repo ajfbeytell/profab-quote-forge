@@ -41,9 +41,24 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("### 🏗️ Cranes & Lifting")
     st.write("Spreader beams, lifting beams, jib cranes, monorail, portal, overhead & underslung cranes")
-    if st.button("Enter Cranes & Lifting →", use_container_width=True, type="primary"):
-        st.switch_page("pages/spreader_beam_app.py")   # temporary - will fix below
+    
+    st.page_link("pages/spreader_beam_app.py", label="Design Spreader Beam", icon="🔧", use_container_width=True)
+    st.page_link("pages/lifting_beam_app.py", label="Design Lifting Beam", icon="🔧", use_container_width=True)
+    st.page_link("pages/jib_crane_app.py", label="Design Jib Crane", icon="🔧", use_container_width=True)
+    st.page_link("pages/monorail_crane_app.py", label="Design Monorail Crane", icon="🔧", use_container_width=True)
+    st.page_link("pages/portal_frame_crane_app.py", label="Design Portal Frame Crane", icon="🔧", use_container_width=True)
+    st.page_link("pages/underslung_crane_app.py", label="Design Underslung Crane", icon="🔧", use_container_width=True)
+    st.page_link("pages/overhead_crane_app.py", label="Design Overhead Crane", icon="🔧", use_container_width=True)
 
-# (We will replace all buttons with st.page_link in the next version)
+with col2:
+    st.markdown("### 🏠 Structural Buildings")
+    st.write("Portal frames, industrial sheds, warehouses")
+    st.page_link("pages/structural_building_app.py", label="Coming Soon", icon="🏗️", use_container_width=True, disabled=True)
 
-st.info("👆 Click the buttons above to start designing")
+with col3:
+    st.markdown("### 🛢️ Tanks & Silos")
+    st.write("Storage tanks, pressure vessels, silos")
+    st.page_link("pages/tank_silo_app.py", label="Coming Soon", icon="🛢️", use_container_width=True, disabled=True)
+
+st.markdown("---")
+st.caption("© QuoteForge • Preliminary designs only • Final designs must be checked & signed by a registered ECSA Engineer")
